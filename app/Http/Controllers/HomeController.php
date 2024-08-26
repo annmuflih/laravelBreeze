@@ -21,6 +21,10 @@ class HomeController extends Controller
             {
                 return view('admin.dashboard');
             }
+            else if ($usertype == 'tim')
+            {
+                return view('tim.dashboard');
+            }
             else
             {
                 return redirect()->back();
